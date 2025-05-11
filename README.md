@@ -37,6 +37,20 @@ This diagram shows the database design including important information about dat
 
 [Functional diagram](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). Tipp: hoover over relations and columns to find more information.
 
-## Guideline for physical design
+## Guideline for physical model 
 
 Make use of Postgres advanced datatypes, implement on delete actions for relations and make use of comments. 
+
+One advantage of using dbdiagram is the good visualization and easy transformation into usable database specific SQL DDL code. But there is still work to do. Adding triggers, views and check constraints cannot be modeled in dbdiagram and have to be done by yourself. Still, I like using dbdiagram very much because it supports the whole process from first visuals to discuss with clients, creating the sql script and if you want you can also use dbdocs for documentation.
+
+[SQL script for database creation](https://.....)
+
+## Populating some test data
+
+## Running some test queries
+
+# Final comments
+
+At first, I thought it will be a very simple database structure with two or three tables. But the more thoughts went into this project and especially when normalizing the database and thinking about later sales analysis the design required more tables. Example is the table *product history*. Without storing the former product information you will never get a chance to reference to it. The products table only contains current data. 
+
+**Points for further improvements:** One can add further tables for storing all orders and promotion information of last years. Employees table can also hold adress information. And for data analysis we might want to include some more qualitative information about our products and especcially customer information. Like a flag for b2b or b2c customer or birthday. Anyhow for demonstration and learning purposes I will finish the project at this stage. 
