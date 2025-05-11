@@ -35,7 +35,7 @@ The next steps are systematically transforming the given information into normal
 
 This diagram shows the database design including important information about data type, constraints and relationships. Also you will find comments for every column.
 
-[Functional diagram]([https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c]). Tipp: hoover over relations and columns to find more information.
+[Functional diagram](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). Tipp: hoover over relations and columns to find more information.
 
 ## Guideline for physical design
 
