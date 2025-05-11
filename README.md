@@ -31,5 +31,12 @@ The next steps are systematically transforming the given information into normal
 - having price information in orders table is no violation to normalization as we will store agreed upon prices and current prices in products table can change
 - to increate integrity and secure consistency we will implement diverse constraints by smart choice of data types, check constraints and of course relational constraints, adding default values where applicable and not null constraings
 
-## Functional database model
+## Functional diagram
 
+This diagram shows the database design including important information about data type, constraints and relationships. Also you will find comments for every column.
+
+[Functional diagram]([https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c]). Tipp: hoover over relations and columns to find more information.
+
+## Guideline for physical design
+
+Make use of Postgres advanced datatypes, implement on delete actions for relations and make use of comments. 
