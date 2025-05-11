@@ -40,9 +40,11 @@ The next steps are systematically transforming the given information into normal
 
 ## Functional diagram
 
-This diagram shows the database design including important information about data type, constraints and relationships. Also you will find comments for every column.
+This diagram shows the database design including relevant information about data type, constraints and relationships. 
 
-[Functional diagram](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). Tipp: hoover over relations and columns to find more information.
+<<implement img here>>
+
+Take a look at a [interactive visualization](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). It is great. Hoover over aspects of the model and get more information.
 
 ## Guideline for physical model 
 
@@ -52,9 +54,13 @@ One advantage of using dbdiagram is the good visualization and easy transformati
 
 [SQL script for database creation](https://.....)
 
-## Populating some test data
+## Test phase
 
-## Running some test queries
+For this purpose we first will populate the tables with test data. SQL DDL script here.
+
+I have use chat gpt to create test data. See prompt here. 
+
+Secondly I created some simple to more complex queries which will test the capabilities and constraints of the database eventually throwing errors if violation occurs. SQL query script here.
 
 # Final comments
 
