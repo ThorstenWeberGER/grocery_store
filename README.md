@@ -1,6 +1,13 @@
 # Practice project for transactional databases
 
-This project focuses on how to set up a transactional database.
+This project focuses on how to set up a transactional database. Contents are:
+- [background]() of project
+- customer [requirements]()
+- [guidelines]() for functional design
+- [functional diagram]()
+- physical model and SQL DDL script
+- test data and test queries
+- final thoughts
 
 ## Background
 
