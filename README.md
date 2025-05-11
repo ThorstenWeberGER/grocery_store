@@ -3,7 +3,7 @@
 This project focuses on how to set up a transactional database. Contents are:
 - [background](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#background) of project
 - customer [requirements](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#customer-requirements)
-- [guidelines]() for functional design
+- [guidelines](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#guideline-for-functional-design) for functional design
 - [functional diagram]()
 - physical model and SQL DDL script
 - test data and test queries
