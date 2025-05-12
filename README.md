@@ -28,27 +28,28 @@ The **deliverables** of this project are:
 - SQL script for testing database with simple to complex queries
 
 Generally a database project from scratch will have **three major phases** before coding:
-1. conceptual model: collect customer requirements, create entity relationship models and diagrams for discussion with clients
-2. functional model: transform requirements into tables, columns, datatypes, keys, normalization
-3. physical model: create database specific implementation plan, partitioning, indexing
+1. *conceptual model*: collect customer requirements, create entity relationship models and diagrams for discussion with clients
+2. *functional model*: transform requirements into tables, columns, datatypes, keys, normalization
+3. *physical model*: create database specific implementation plan, partitioning, indexing
 
 In our approach we will skip most parts of the first phase, as many real world projects also begin somewhere in between conceptual and functional.
 
 ## Customer requirements
 
 The result of the first interview with the owner is showing following **entities** and **attributes**:
-- employees: name, role in grocery store, hire date, salary
-- customers: name, address, contact data, loyalty programm points
-- orders: order date, ordered products, price, quantity, payment method, if applicable delivery date
-- inventory: location in warehouse, product, stock quantity, re-order limit
-- suppliers: name, supplied products, contact person, contact information, our employee who manages the vendor
-- promotions: name, discount, start time, end time, products on discount (all or specific)
+- *employees*: name, role in grocery store, hire date, salary
+- *customers*: name, address, contact data, loyalty programm points
+- *orders*: order date, ordered products, price, quantity, payment method, if applicable delivery date
+- *inventory*: location in warehouse, product, stock quantity, re-order limit
+- *suppliers*: name, supplied products, contact person, contact information, our employee who manages the vendor
+- *promotions*: name, discount, start time, end time, products on discount (all or specific)
 
 ## Guidelines for functional design
 
 The next steps include transforming entities into tables, attributes into columns, define their datatypes and cadinality of their relationships. 
 
 Some **exemplary thoughts** for the functional designs were:
+- *primary keys*: generate surrogate primary keys 
 - *atomic values*: some attributes need to be further split into multiple columns like the name attribute will be stored as firstname and lastname
 - *normalization*: transform entities into third normal form, eventually adding tables for product categories, employees roles 
 - *constraints*: choice of correct data types, keys constraints, default values where applicable and not null constraints
