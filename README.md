@@ -44,9 +44,9 @@ The next steps are systematically transforming the given information into normal
 
 This diagram shows the database design including relevant information about data type, constraints and relationships. 
 
-<<implement img here>>
+![Functional diagram](functional%20diagram.png)
 
-Take a look at a [interactive visualization](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). Tip: Hoover over aspects of the model and get more information.
+Take a look at the [interactive visualization](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c). Tip: Hoover over aspects of the model and get more information.
 
 ## Guideline for physical model 
 
