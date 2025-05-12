@@ -44,14 +44,18 @@ The result of the first interview with the owner is showing following **entities
 - suppliers: name, supplied products, contact person, contact information, our employee who manages the vendor
 - promotions: name, discount, start time, end time, products on discount (all or specific)
 
-## Guideline for functional design
+## Guidelines for functional design
 
-The next steps include transforming entities into tables, attributes into columns, define their datatypes and cadinality of their relationships. Some exemplary thoughts for the functional designs were:
-- atomic values: some attributes need to be further split into multiple columns like the name attribute will be stored as firstname and lastname
-- normalization: transform entities into third normal form, eventually adding tables for product categories, employees roles 
-- constraints: choice of correct data types, keys constraints, default values where applicable and not null constraints
-- historic values: add a separate table with no relationships to store historic price and product information seperate from the operative products table which will hold only actual data
-- de-normalization: saving total bill of a order and its individual product prices can be seen as a violation against third normal form. That is true for the total field for the order table, as it can be calculated by quantity of order and price. But sometimes you compromise as it is pragmatic to store the total simply aside the order number. And the individual products prices are required if there are individual agreements besides the list prices. That is the case for b2b customers especially. And also: the prices are changing over time. So you need a place where to store the prices valid at the point of time. This will the done in the order items table for each individual product
+The next steps include transforming entities into tables, attributes into columns, define their datatypes and cadinality of their relationships. 
+
+Some **exemplary thoughts** for the functional designs were:
+- *atomic values*: some attributes need to be further split into multiple columns like the name attribute will be stored as firstname and lastname
+- *normalization*: transform entities into third normal form, eventually adding tables for product categories, employees roles 
+- *constraints*: choice of correct data types, keys constraints, default values where applicable and not null constraints
+- *historic values*: add a separate table with no relationships to store historic price and product information seperate from the operative products table which will hold only actual data
+
+**Pragmatic de-normalization**
+Saving total bill of an order and its individual product prices can be seen as a violation against third normal form. That is true for the total of the order table, as it can be calculated by quantity of order and price. But sometimes you compromise as it is pragmatic to store the total simply aside the order number. And the individual products prices are required if there are individual agreements besides the list prices. That is the case for b2b customers especially. And also: the prices are changing over time. So you need a place where to store the prices valid at the point of time. This will the done in the order items table for each individual product
 
 That said, above thoughts are all means to an end, meaning database integrity and consistency over its lifecycle.
 
