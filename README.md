@@ -6,13 +6,11 @@
 </p>
 
 This project focuses on how to set up a transactional database. **Contents** are:
-- [background](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#background) of project
-- customer [requirements](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#customer-requirements)
-- [guidelines](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#guideline-for-functional-design) for functional design
-- [functional diagram](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#functional-diagram)
+- [background](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#background) of project and customer [requirements](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#customer-requirements)
+- functional model: [guidelines](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#guideline-for-functional-design) and [functional diagram](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#functional-diagram)
 - [physical model](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#guideline-for-physical-model) and SQL DDL script
-- [testing]() phase: data and test queries
-- [final thoughts]()
+- [testing](https://github.com/ThorstenWeberGER/grocery_store#test-phase): data and test queries
+- [final thoughts](https://github.com/ThorstenWeberGER/grocery_store#final-comments)
 
 ### Scope of project
 
