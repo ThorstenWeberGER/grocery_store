@@ -22,7 +22,7 @@ Generally a database project from scratch will have **three major phases** befor
 3. *physical model*: create database specific implementation plan, partitioning, indexing
 In our approach we will skip parts of the first phase and directly begin showing functional models.
 
-Let's jump right in ;-)
+Let's jump right in ツ
 
 ## Background
 
