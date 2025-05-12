@@ -14,13 +14,7 @@ This project focuses on how to set up a transactional database. **Contents** are
 
 ### Scope of project
 
-Main goal of this project is to demonstrate the main steps of a database design and to illustrate some of the important decisions made on the way. Thus said, we will go the full way but focus strongly on the main aspects and decisions made.
-
-Generally a database project from scratch will have **three major phases** before coding:
-1. *conceptual model*: collect customer requirements, create entity relationship models and diagrams for discussion with clients
-2. *functional model*: transform requirements into tables, columns, datatypes, keys, normalization
-3. *physical model*: create database specific implementation plan, partitioning, indexing
-In our approach we will skip parts of the first phase and directly begin showing functional models.
+Main goal of this project is to demonstrate the main steps of a database design and to illustrate some of the important decisions made on the way. Thus said, we will go the full way but focus strongly on the main aspects and decisions made. Furthermore we be shortening the conceptual design phase without compromising quality of course.  
 
 Let's jump right in ツ
 
