@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="grocery_store_man%20with%20notebook.jpg" alt="man with notebook in grocery store" width="30%">
-  Picture generated with ChatGPT
+  <br>Picture generated with ChatGPT
 </p>
 
 This project focuses on how to set up a transactional database. **Contents** are:
