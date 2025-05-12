@@ -1,6 +1,6 @@
 # Practice project for transactional databases
 
-<p align="center">
+<p align="left">
   <img src="grocery_store_man%20with%20notebook.jpg" alt="man with notebook in grocery store" width="30%">
   <br>Picture generated with ChatGPT
 </p>
