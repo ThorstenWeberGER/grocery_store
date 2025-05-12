@@ -1,9 +1,9 @@
+<p align="center">
 # Practice project for transactional databases
 
-<p align="center">
+
   <img src="grocery_store_man%20with%20notebook.jpg" alt="man with notebook in grocery store" width="30%">
   <br>Picture generated with ChatGPT
-</p>
 
 This project focuses on how to set up a transactional database. **Contents** are:
 - [background](https://github.com/ThorstenWeberGER/grocery_store/blob/main/README.md#background) of project
@@ -15,6 +15,7 @@ This project focuses on how to set up a transactional database. **Contents** are
 - [final thoughts]()
 
 **Scope** of this practice: Main goal of this project is to demonstrate the main steps of a database design and to illustrate some of the important decisions made on the way. Thus said, we will go the full way but not discuss every decision made.
+</p>
 
 ## Background
 
