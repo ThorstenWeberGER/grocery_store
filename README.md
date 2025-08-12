@@ -75,9 +75,9 @@ One advantage of using *dbdiagram* besides good visualization is easy transforma
 
 For this purpose we will first populate the tables with test data. SQL DDL script here.
 
-I have used ChatGPT to create test data. See prompt here. 
+I have used ChatGPT to create test data. See [script](code/grocery_store_test_data.sql) here. Of ourse some debugging was required, but generally this is a great option to fill the tables. 
 
-Secondly I created some simple to complex queries which will test the capabilities and constraints of the database. SQL query script here.
+Secondly I created some simple to complex queries which will test the capabilities and constraints of the database. SQL query [script](code/grocery_store_test_queries.sql) here.
 
 # Final comments
 

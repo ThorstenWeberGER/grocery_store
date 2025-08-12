@@ -9,15 +9,15 @@ SET search_path TO grocery_store;
 CREATE TABLE if not exists products (
   "product_id" serial PRIMARY KEY,
   "supplier_id" int NOT NULL,
-  "name" varchar[50] NOT NULL,
+  "name" varchar(50) NOT NULL,
   "price" numeric(10,2) NOT NULL,
   "category_id" int NOT NULL
 );
 
 CREATE TABLE if not exists "categories" (
   "category_id" serial PRIMARY KEY,
-  "name" varchar[50] NOT NULL,
-  "description" varchar[200]
+  "name" varchar(50) NOT NULL,
+  "description" varchar(200)
 );
 
 CREATE TABLE if not exists "suppliers" (
@@ -60,8 +60,10 @@ CREATE TABLE if not exists "payment_methods" (
   "description" varchar(200)
 );
 
+
 CREATE TABLE if not exists "order_items" (
   "order_item_id" serial PRIMARY KEY,
+  "order_id" int not null,
   "product_id" int NOT NULL,
   "quantity" int NOT NULL,
   "price_sold" numeric(10,2) NOT NULL,
@@ -93,7 +95,7 @@ CREATE TABLE if not exists "customers" (
   "phone" varchar(50),
   "street" varchar(50),
   "housenumber" smallint,
-  "postal_code" smallint,
+  "postal_code" int,
   "city" varchar(50),
   "loyalty_points" smallint DEFAULT 0
 );
@@ -288,7 +290,7 @@ ALTER TABLE "products" ADD CONSTRAINT "fk_supplier_id" FOREIGN KEY ("supplier_id
 
 ALTER TABLE "order_items" ADD CONSTRAINT "fk_product_id" FOREIGN KEY ("product_id") REFERENCES "products" ("product_id");
 
-ALTER TABLE "order_items" ADD CONSTRAINT "fk_order_id" FOREIGN KEY ("order_item_id") REFERENCES "orders" ("order_id");
+ALTER TABLE "order_items" ADD CONSTRAINT "fk_order_id" FOREIGN KEY ("order_id") REFERENCES "orders" ("order_id");
 
 ALTER TABLE "orders" ADD CONSTRAINT "fk_employee_id" FOREIGN KEY ("employee_id") REFERENCES "employees" ("employee_id");
 
