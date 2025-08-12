@@ -1,7 +1,7 @@
 # Practice project for transactional databases
 
 <p align="left">
-  <img src="grocery_store_man%20with%20notebook.jpg" alt="man with notebook in grocery store" width="30%">
+  <img src="image/grocery_store_man%20with%20notebook.jpg" alt="man with notebook in grocery store" width="30%">
   <br>Picture generated with ChatGPT
 </p>
 
@@ -59,7 +59,7 @@ That said, above thoughts are all means to an end, meaning database integrity an
 
 This diagram shows the resulting database design including relevant information about data type, constraints and relationships. 
 
-![Functional diagram](functional%20diagram.png)
+![Functional diagram](image/functional%20diagram.png)
 
 Take a look at the [interactive visualization](https://dbdiagram.io/d/grocery-store-681f60745b2fc4582f05719c) where you get more information via hoovering over aspects of the model.
 
@@ -69,7 +69,7 @@ Make use of Postgres advanced datatypes, implement on delete actions for relatio
 
 One advantage of using *dbdiagram* besides good visualization is easy transformation into usable database specific SQL DDL code. But there is still work to do. Adding triggers, views and check constraints cannot be modeled in *dbdiagram* and have to be done by yourself. Still, I like using dbdiagram very much because it supports the whole process from first visuals to discuss with clients, creating the sql script and if you want you can also use dbdocs for documentation.
 
-[SQL script for database creation](https://.....)
+[SQL script for database creation](code/grocery_store_ddl.sql)
 
 ## Test phase
 
